@@ -81,6 +81,7 @@ fw={700}
             Get Started
           </Button>
         </div>
+        <p>Hi </p>
       </Container>
     </div>
   );
