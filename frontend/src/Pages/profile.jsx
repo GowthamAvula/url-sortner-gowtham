@@ -3,6 +3,7 @@ import Service from '../utils/http';
 const service=new Service();
 import { Avatar, Stack } from '@mantine/core';
 import { Text } from '@mantine/core';
+import { Box, Container } from '@mantine/core';
 
 const Profile = ()=> {
     const [profileData,setProfileData]=useState(null);
@@ -17,15 +18,21 @@ const Profile = ()=> {
     useEffect ( ()=>{
         getProfileData();
     },[])
-    // console.log("printing")
+    //
   return (
-    <Stack align='center'>
-        <Avatar src={profileData?.avatar}/>
-        <Text> {profileData?.name}</Text>
+    <Container size={"sm"}>
+    <Stack h={300}
+      bg="var(--mantine-color-body)"
+      align="center"
+      justify="center"
+      gap="lg">
+        <Avatar size={"lg"} radius={"xl"} src={profileData?.avatar}/>
+        <Text id="dd"> {profileData?.name}</Text>
         <Text>{profileData?.email}</Text>
-        <Text>USER ID : {profileData?._id}</Text>
-        <Text>{profileData?.createdAt}</Text>
-    </Stack>   
+        <Text id="gg"> <b>User Id :</b> {profileData?._id}</Text>
+        <Text id="hh"><b>Created Account :</b>{profileData?.createdAt}</Text>
+    </Stack> 
+    </Container>  
     
   )
 }
