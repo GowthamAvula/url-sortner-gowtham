@@ -30,7 +30,7 @@ const Profile = ()=> {
         <Text id="dd"> {profileData?.name}</Text>
         <Text>{profileData?.email}</Text>
         <Text id="gg"> <b>User Id :</b> {profileData?._id}</Text>
-        <Text id="hh"><b>Created Account :</b>{profileData?.createdAt}</Text>
+        <Text id="hh"><b>Created Account At :</b>{profileData?.createdAt}</Text>
     </Stack> 
     </Container>  
     
