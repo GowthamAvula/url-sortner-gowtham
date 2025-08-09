@@ -18,7 +18,7 @@ const Profile = ()=> {
     useEffect ( ()=>{
         getProfileData();
     },[])
-    //
+    
   return (
     <Container size={"sm"}>
     <Stack h={300}
