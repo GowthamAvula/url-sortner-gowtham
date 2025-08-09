@@ -1,5 +1,5 @@
 import Service from '../../utils/http';
-import { Anchor, Button, Container, Stack } from '@mantine/core';
+import { Anchor, Button, Card, Container, Group, Space, Stack, Title,Text } from '@mantine/core';
 const service = new Service();
 
 
@@ -9,30 +9,29 @@ export default function Response(props) {
 
 
    return (
-       <div>
-      <Container>
-        <Stack
-          h={300}
-          bg="var(--mantine-color-body)"
-          align="center"
-          justify="center"
-          gap="md"
-        >
-          <Anchor href={redirectUrl} target="_blank">
-            Short url
-          </Anchor>
+       <Card shadow="md" radius="md" withBorder p="lg" mt="xl" style={{ maxWidth: 500, margin: '0 auto' }}>
+     <Title order={4} mb="sm">Shortened URL</Title>
 
-          <Button
-            onClick={() => {
-              props.setResponse(null);
-            }}
-          >
-            {" "}
-            clear response{" "}
-          </Button>
-        </Stack>
-      </Container>
-    </div>
+
+     <Text mb="sm">
+       Here is your shortened URL:
+     </Text>
+
+
+     <Anchor href={redirectUrl} target="_blank" size="lg" weight={600} color="blue">
+       {redirectUrl}
+     </Anchor>
+
+
+     <Space h="md" />
+
+
+     <Group position="right">
+       <Button variant="outline" color="red" onClick={() => props.setResponse(null)}>
+         Clear Response
+       </Button>
+     </Group>
+   </Card>
    )
 }
 
