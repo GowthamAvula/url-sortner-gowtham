@@ -47,7 +47,7 @@ export function HeaderMegaMenu() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Text component={Link} to="/" className={classes.logo}>
-            Being  <Text component="span">Zero</Text>
+             <Text component="span"></Text>
           </Text>
 
           <Group h="100%" gap={0} visibleFrom="sm">

@@ -6,7 +6,7 @@ const shortURLRouter = Router();
 
 
 
-shortURLRouter.post("", loggedInUser ,generateShortUrl)
+shortURLRouter.post("", loggedInUser, generateShortUrl)
 shortURLRouter.get("/:shorturl", redirectUrl);
 
 
