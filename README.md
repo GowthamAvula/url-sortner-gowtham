@@ -1,4 +1,19 @@
+# 🔗 Url Shortner - Premium URL Shortening & Analytics Platform
 
+A highly polished, modern, full-stack MERN application built on top of the **create-url-sortner** boilerplate. It allows users to create secure shortened URLs, specify custom short codes, generate and download QR codes instantly, and track redirect click analytics in real-time.
+
+---
+
+## 🎯 About this Project
+
+This application is customized with premium features and a high-end glassmorphism design:
+* **Custom URL Codes**: Specify your own brand codes (e.g., `/hn-dev-test`) or generate robust 7-character random codes automatically.
+* **Automatic QR Codes**: Renders a dynamic, scan-ready QR code instantly on generation, complete with a one-click PNG download feature.
+* **Real-time Analytics**: Keeps exact counts of redirects (`clickCount`) in MongoDB.
+* **Safety & Expiry Validation**: Built-in verification for deactivation status and expiration dates before redirecting.
+* **Breathtaking Glassmorphism UI**: Beautifully designed responsive Home and Profile sections using Mantine UI layered over elegant gradient backdrops.
+
+---
 [![npm version](https://img.shields.io/npm/v/create-bz-mern-app.svg)](https://www.npmjs.com/package/create-bz-mern-app)
 [![npm downloads](https://img.shields.io/npm/dm/create-bz-mern-app.svg)](https://www.npmjs.com/package/create-bz-mern-app)
 [![GitHub stars](https://img.shields.io/github/stars/kaushikkumarbz/create-bz-mern-app?style=social)](https://github.com/kaushikkumarbz/create-bz-mern-app)
